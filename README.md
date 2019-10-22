@@ -50,3 +50,6 @@ Penn Treebank dataset is a widely-used benchmark dataset for language modeling t
 For evaluation, the network is trained using the averaged SGD (ASGD) with the batch size 64 and the learning rate 20. The network is trained for 1600 epochs.
 
 The embedding size are set to 850, and the rest of hyper-parameters are identical to the architecture search step.
+
+## Acknowledgments
+This source codes were developed by Heung-Chang Lee and Do-Guk Kim. The project was supported in part by the Hana TI.
