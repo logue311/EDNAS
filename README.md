@@ -11,7 +11,7 @@ Fig 1. An example of the convolutional cell sampling by EDNAS.
 </p>
 
 <p align="center">
-  <img src="figures/EDNAS_RNN.png" alt="cnn" width="80%">
+  <img src="figures/EDNAS_RNN.png" alt="rnn" width="80%">
 </p>
 <p align="center">
 Fig 2. An example of the recurrent cell sampling by EDNAS.
@@ -35,22 +35,19 @@ We optimize the network using SGD without the Nesterov momentum and incorporate 
 Regarding the computing environment, we used p3.2xlarge type instances of Amazon Web Services, which utilize NVIDIA V100 GPU.
 
 **Results**
-
 - Search cost: 0.28 GPU days
-
 - Test error: 2.84%
-
 - Parameters: 3.7M
 
 <p align="center">
-  <img src="figures/normal_cifar.png" alt="cnn" width="50%">
+  <img src="figures/normal_ cifar.png" alt="norm_cifar" width="50%">
 </p>
 <p align="center">
 Fig 3. The normal cell discovered by EDNAS on CIFAR-10.
 </p>
 
 <p align="center">
-  <img src="figures/reduction_cifar.png" alt="cnn" width="50%">
+  <img src="figures/reduction_cifar.png" alt="reduce_cifar" width="50%">
 </p>
 <p align="center">
 Fig 4. The reduction cell discovered by EDNAS on CIFAR-10.
