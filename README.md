@@ -32,6 +32,29 @@ In architecture search, EDNAS uses 2 input nodes and 4 operation nodes to design
 We adopt a different architecture for performance evaluation, which is composed of 20 cells (18 normal cells and 2 reduction cells); 6 normal cells are followed by a reduction cell twice, and there are 6 normal cells with the auxiliary classifier at the end of the network to reduce the vanishing gradient problem.
 The learning rate is 0.025, the batch size is 128, and the network is trained for 600 epochs.
 We optimize the network using SGD without the Nesterov momentum and incorporate the cutout method for better generalization.
+Regarding the computing environment, we used p3.2xlarge type instances of Amazon Web Services, which utilize NVIDIA V100 GPU.
+
+**Results**
+
+- Search cost: 0.28 GPU days
+
+- Test error: 2.84%
+
+- Parameters: 3.7M
+
+<p align="center">
+  <img src="figures/normal_cifar.png" alt="cnn" width="50%">
+</p>
+<p align="center">
+Fig 3. The normal cell discovered by EDNAS on CIFAR-10.
+</p>
+
+<p align="center">
+  <img src="figures/reduction_cifar.png" alt="cnn" width="50%">
+</p>
+<p align="center">
+Fig 4. The reduction cell discovered by EDNAS on CIFAR-10.
+</p>
 
 ## Convolutional Cell Search with ImageNet
 **Data and Experiment Setting**
