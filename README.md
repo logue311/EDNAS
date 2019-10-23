@@ -40,7 +40,7 @@ Regarding the computing environment, we used p3.2xlarge type instances of Amazon
 - Parameters: 3.7M
 
 <p align="center">
-  <img src="figures/normal_ cifar.png" alt="norm_cifar" width="50%">
+  <img src="figures/normal_cifar.png" alt="norm_cifar" width="32%">
 </p>
 <p align="center">
 Fig 3. The normal cell discovered by EDNAS on CIFAR-10.
