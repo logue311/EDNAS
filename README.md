@@ -40,7 +40,7 @@ Regarding the computing environment, we used p3.2xlarge type instances of Amazon
 - Parameters: 3.7M
 
 <p align="center">
-  <img src="figures/normal_cifar.png" alt="norm_cifar" width="32%">
+  <img src="figures/normal_cifar.png" alt="norm_cifar" width="35%">
 </p>
 <p align="center">
 Fig 3. The normal cell discovered by EDNAS on CIFAR-10.
@@ -62,6 +62,25 @@ We employ the SGD optimizer for architecture search without the Nesterov momentu
 
 The architecture for performance evaluation is composed of 14 cells (12 normal cells and 2 reduction cells), where each reduction cells follows a series of 4 normal cells. Also, we integrate the auxiliary classifier to learn the model using an SGD with the learning rate 0.1, the batch size 200, and the network is trained for 250 epochs.
 
+**Results**
+- Search cost: 3.67 GPU days
+- Test error: 26.9% (top-1), 8.9% (top-5)
+- Parameters: 4.7M
+
+<p align="center">
+  <img src="figures/normal_imagenet.png" alt="norm_imagenet" width="35%">
+</p>
+<p align="center">
+Fig 5. The normal cell discovered by EDNAS on ImageNet.
+</p>
+
+<p align="center">
+  <img src="figures/reduction_imagenet.png" alt="reduce_imagenet" width="35%">
+</p>
+<p align="center">
+Fig 6. The reduction cell discovered by EDNAS on ImageNet.
+</p>
+
 ## Recurrent Cell Search with Penn Treebank
 **Data and Experiment Setting**
 
@@ -70,6 +89,18 @@ Penn Treebank dataset is a widely-used benchmark dataset for language modeling t
 For evaluation, the network is trained using the averaged SGD (ASGD) with the batch size 64 and the learning rate 20. The network is trained for 1600 epochs.
 
 The embedding size are set to 850, and the rest of hyper-parameters are identical to the architecture search step.
+
+**Results**
+- Search cost: 0.11 GPU days
+- Test perplexity: 59.45
+- Parameters: 23M
+
+<p align="center">
+  <img src="figures/rnn_cell.png" alt="rnn_cell" width="65%">
+</p>
+<p align="center">
+Fig 7. The recurrent cell discovered by EDNAS on Penn Treebank.
+</p>
 
 ## Acknowledgments
 This source codes were developed by Heung-Chang Lee and Do-Guk Kim. The project was supported in part by the Hana TI.
