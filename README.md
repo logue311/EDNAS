@@ -103,4 +103,4 @@ Fig 7. The recurrent cell discovered by EDNAS on Penn Treebank.
 </p>
 
 ## Acknowledgments
-This source codes were developed by Heung-Chang Lee and Do-Guk Kim. The project was supported in part by the Hana TI.
+This source codes were developed by Heung-Chang Lee and Do-Guk Kim at Hana Institute of Technology. The project was supported in part by the Hana TI.
