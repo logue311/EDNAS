@@ -1,6 +1,6 @@
 # Efficient Decoupled Neural Architecture Search by Structure and Operation Sampling (EDNAS)
 
-These source codes are authors' pytorch implementation of EDNAS.
+These source codes are authors' pytorch implementation of EDNAS (https://arxiv.org/abs/1910.10397).
 Our codes are implemented based on pytorch implementation of DARTS (https://github.com/quark0/darts).
 
 <p align="center">
